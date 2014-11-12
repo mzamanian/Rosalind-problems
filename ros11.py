@@ -24,11 +24,10 @@ for SeqID in headers:
 	SeqIDs.append(SeqID)
 
 Seqs = []
-nheaders = re.findall('%([^>]+)%', fstring)  #or [ATGCN]
+nheaders = re.findall('%([^>]+)%', fstring)
 for Seq in nheaders:
 	Seqs.append(Seq)
 
-#initialize profile matrix
 length = len(Seqs[0])
 A = [0]*length
 C = [0]*length
