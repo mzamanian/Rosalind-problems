@@ -21,4 +21,3 @@ print prec
 #P(mn) = (m/t)*(n/(t-1)) * 1/2
 #P(nm) = (n/t)*(m/(t-1)) * 1/2
 #P(mm) = (m/t)*((m-1)/(t-1)) * 1/4
-#P(recessive) = ((n**2) - n + (m*n*0.5) / ((t**2) - t)

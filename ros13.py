@@ -38,9 +38,9 @@ nheaders = re.findall('%([^>]+)%', fstring)
 for Seq in nheaders:
 	Seqs.append(Seq)
 
-seq1 = Seqs[0]  #use seq1 for seeding
-num_seqs = len(Seqs) #total # of sequences
-seq_length = len(seq1) #length of sequence 1 (= maximum common substring of any sequence)
+seq1 = Seqs[0] 
+num_seqs = len(Seqs) 
+seq_length = len(seq1) 
 
 max_len = 0 
 max_sub = ''
@@ -51,7 +51,6 @@ for k in range(0,seq_length):
 		temp_string = seq1t[:i]
 		temp_len = len(temp_string)
 		result = checkmatch(temp_string)
-		#print 'TempSeq1:', temp_string, 'templength:', temp_len,'result:',result
 		if result == num_seqs:
 			if temp_len > max_len:
 				max_len = temp_len
@@ -61,6 +60,5 @@ for k in range(0,seq_length):
 		else:
 			break
 
-#print max_len
 print max_sub
 f.close()
